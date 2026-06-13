@@ -4,6 +4,30 @@ Client lourd de gestion de projet, outil décisionnel et de simulation, augment�
 
 ---
 
+## démarrer :
+
+terminal 1
+```bash
+cd backend
+python -m venv .venv
+
+# Windows
+.\.venv\Scripts\Activate.ps1
+# macOS / Linux
+source .venv/bin/activate
+
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+
+terminal 2
+
+````bash
+npm run dev:frontend
+# ou pour le client lourd Tauri :
+npm run tauri dev
+```
+
 ## Concept
 
 Atelier est un environnement de travail intelligent destiné aux consultants et décideurs. Il centralise les fichiers, données et connaissances d'un projet, orchestre des agents IA spécialisés, et produit automatiquement des analyses, scénarios et rapports contextualisés.
